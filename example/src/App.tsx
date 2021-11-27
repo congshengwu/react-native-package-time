@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import RNModuleTemplateModule, { Counter } from 'react-native-module-template';
+import RNPackageTimeModule, { Counter } from 'react-native-package-time';
 
 const App = () => {
   useEffect(() => {
-    console.log(RNModuleTemplateModule);
+    console.log(RNPackageTimeModule);
   });
 
   return <Counter />;
