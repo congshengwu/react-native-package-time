@@ -1,12 +1,21 @@
-import React, { useEffect } from 'react';
-import RNPackageTimeModule, { Counter } from 'react-native-package-time';
+import React, { useEffect, useState } from 'react';
+import { Text, View } from 'react-native';
+import { getPackageTime } from 'react-native-package-time';
 
 const App = () => {
-  useEffect(() => {
-    console.log(RNPackageTimeModule);
-  });
+  const [packageTime, setPackageTime] = useState<string>('');
 
-  return <Counter />;
+  useEffect(() => {
+    getPackageTime().then(async (result) => {
+      setPackageTime(result);
+    });
+  }, []);
+
+  return (
+    <View>
+      <Text>{`packageTime: ${packageTime}`}</Text>
+    </View>
+  );
 };
 
 export default App;
