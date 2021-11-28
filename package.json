@@ -2,11 +2,8 @@
   "name": "react-native-package-time",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/congshengwu/react-native-package-time#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "Shengwu Cong <congsw@foxmail.com>",
-  "license": "MIT",
   "files": [
     "android",
     "ios",
@@ -32,6 +29,16 @@
     "prepare": "yarn compile",
     "test": "jest"
   },
+  "author": "Shengwu Cong <congsw@foxmail.com>",
+  "homepage": "https://github.com/congshengwu/react-native-package-time#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/congshengwu/react-native-package-time.git"
+  },
+  "bugs": {
+    "url": "https://github.com/congshengwu/react-native-package-time/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/runtime": "^7.16.3",
