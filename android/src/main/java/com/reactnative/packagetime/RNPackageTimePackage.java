@@ -1,4 +1,4 @@
-package com.shengwucong.reactnativemoduletemplate;
+package com.reactnative.packagetime;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
