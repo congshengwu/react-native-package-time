@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RNBuildConfigPackage implements ReactPackage {
+public class RNPackageTimePackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new RNBuildConfigModule(reactContext));
+        modules.add(new RNPackageTimeModule(reactContext));
         return modules;
     }
 

@@ -4,7 +4,7 @@ function getPackageTime(): Promise<string> {
   return new Promise<string>((resolve) => {
     if (Platform.OS === 'ios') {
     } else {
-      NativeModules.RNBuildConfigModule.getPackageTime((result: string) => {
+      NativeModules.RNPackageTimeModule.getPackageTime((result: string) => {
         resolve(result);
       });
     }

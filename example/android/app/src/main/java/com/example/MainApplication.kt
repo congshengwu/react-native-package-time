@@ -2,7 +2,7 @@ package com.example
 
 import android.app.Application
 import android.content.Context
-import com.shengwucong.reactnativemoduletemplate.RNBuildConfigPackage
+import com.shengwucong.reactnativemoduletemplate.RNPackageTimePackage
 import com.facebook.react.*
 import com.facebook.soloader.SoLoader
 import java.lang.reflect.InvocationTargetException
@@ -18,7 +18,7 @@ class MainApplication : Application(), ReactApplication {
             val packages = PackageList(this).packages
             // Packages that cannot be autolinked yet can be added manually here, for example:
             // packages.add(MyReactNativePackage());
-            packages.add(RNBuildConfigPackage())
+            packages.add(RNPackageTimePackage())
             return packages
         }
 

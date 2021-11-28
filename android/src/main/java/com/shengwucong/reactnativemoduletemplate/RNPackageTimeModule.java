@@ -6,17 +6,17 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactMethod;
 
-public class RNBuildConfigModule extends ReactContextBaseJavaModule  {
+public class RNPackageTimeModule extends ReactContextBaseJavaModule  {
     private ReactApplicationContext mContext;
 
-    public RNBuildConfigModule(ReactApplicationContext reactContext) {
+    public RNPackageTimeModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "RNBuildConfigModule";
+        return "RNPackageTimeModule";
     }
 
     @ReactMethod
