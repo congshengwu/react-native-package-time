@@ -23,7 +23,7 @@ import { getPackageTime } from 'react-native-package-time';
 
 // Unix timestamp, in milliseconds.
 getPackageTime().then((time): nubmer => {
-  console.log(time);
+  console.log(time); // 1638201352000
 });
 
 ```
