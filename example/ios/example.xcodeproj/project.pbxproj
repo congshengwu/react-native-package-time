@@ -10,17 +10,17 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AD0F37EFFB33AF9F720C5746 /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3F9DD7861D38FA3D1B8633 /* libPods-example.a */; };
+		BA98B64727548087000E4597 /* libRNPackageTimeModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA98B6442754614E000E4597 /* libRNPackageTimeModule.a */; };
 		FAA6DE282607FC1C0044CA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DE272607FC1C0044CA6D /* AppDelegate.swift */; };
-		FAE31FCD265B9F6F007094C1 /* libRNModuleTemplateModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE31FCC265B9F5F007094C1 /* libRNModuleTemplateModule.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FAE31FCB265B9F5F007094C1 /* PBXContainerItemProxy */ = {
+		BA98B6432754614E000E4597 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FAE31FC7265B9F5F007094C1 /* RNModuleTemplateModule.xcodeproj */;
+			containerPortal = BA98B63F2754614E000E4597 /* RNPackageTimeModule.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FA0EFF60236CC8FB00069FA8;
-			remoteInfo = RNModuleTemplateModule;
+			remoteInfo = RNPackageTimeModule;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,10 +32,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = example/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3F9DD7861D38FA3D1B8633 /* libPods-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E3EE3226F263437D36C23 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		BA98B63F2754614E000E4597 /* RNPackageTimeModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNPackageTimeModule.xcodeproj; path = ../../ios/RNPackageTimeModule.xcodeproj; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAA6DE272607FC1C0044CA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = example/AppDelegate.swift; sourceTree = "<group>"; };
 		FAA6DE2A2607FC480044CA6D /* example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "example-Bridging-Header.h"; path = "example/example-Bridging-Header.h"; sourceTree = "<group>"; };
-		FAE31FC7265B9F5F007094C1 /* RNModuleTemplateModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNModuleTemplateModule.xcodeproj; path = ../../ios/RNModuleTemplateModule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE31FCD265B9F6F007094C1 /* libRNModuleTemplateModule.a in Frameworks */,
 				AD0F37EFFB33AF9F720C5746 /* libPods-example.a in Frameworks */,
+				BA98B64727548087000E4597 /* libRNPackageTimeModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				FAE31FC7265B9F5F007094C1 /* RNModuleTemplateModule.xcodeproj */,
+				BA98B63F2754614E000E4597 /* RNPackageTimeModule.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -111,10 +111,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAE31FC8265B9F5F007094C1 /* Products */ = {
+		BA98B6402754614E000E4597 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAE31FCC265B9F5F007094C1 /* libRNModuleTemplateModule.a */,
+				BA98B6442754614E000E4597 /* libRNPackageTimeModule.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,8 +170,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FAE31FC8265B9F5F007094C1 /* Products */;
-					ProjectRef = FAE31FC7265B9F5F007094C1 /* RNModuleTemplateModule.xcodeproj */;
+					ProductGroup = BA98B6402754614E000E4597 /* Products */;
+					ProjectRef = BA98B63F2754614E000E4597 /* RNPackageTimeModule.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -182,11 +182,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FAE31FCC265B9F5F007094C1 /* libRNModuleTemplateModule.a */ = {
+		BA98B6442754614E000E4597 /* libRNPackageTimeModule.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRNModuleTemplateModule.a;
-			remoteRef = FAE31FCB265B9F5F007094C1 /* PBXContainerItemProxy */;
+			path = libRNPackageTimeModule.a;
+			remoteRef = BA98B6432754614E000E4597 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
