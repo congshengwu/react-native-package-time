@@ -29,6 +29,16 @@
     "prepare": "yarn compile",
     "test": "jest"
   },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "ios",
+    "android",
+    "time",
+    "timestamp",
+    "package",
+    "build"
+  ],
   "author": "Shengwu Cong <congsw@foxmail.com>",
   "homepage": "https://github.com/congshengwu/react-native-package-time#readme",
   "repository": {
