@@ -1,6 +1,6 @@
 {
   "name": "react-native-package-time",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Get the packaging time of the app.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
