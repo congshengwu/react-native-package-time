@@ -1,14 +1,13 @@
 import { NativeModules, Platform } from 'react-native';
 
-function getPackageTime(): Promise<string> {
-  return new Promise<string>((resolve) => {
+function getPackageTime(): Promise<number> {
+  return new Promise<number>((resolve) => {
     if (Platform.OS === 'ios') {
     } else {
       NativeModules.RNPackageTimeModule.getPackageTime((result: string) => {
-        resolve(result);
+        resolve(new Date(result).getTime());
       });
     }
-    return null;
   });
 }
 

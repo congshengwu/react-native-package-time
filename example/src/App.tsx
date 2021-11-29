@@ -3,10 +3,11 @@ import { Text, View } from 'react-native';
 import { getPackageTime } from 'react-native-package-time';
 
 const App = () => {
-  const [packageTime, setPackageTime] = useState<string>('');
+  const [packageTime, setPackageTime] = useState<number>();
 
   useEffect(() => {
     getPackageTime().then(async (result) => {
+      console.log(result);
       setPackageTime(result);
     });
   }, []);
