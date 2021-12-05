@@ -34,6 +34,13 @@ getPackageTime().then((time): nubmer => {
 | ----------------- | ------          | -----------         | ------- |  ---          | --------------------------------------------------------|
 | getPackageTime()  |        -        | `Promise<number>`   |    true |    true       |  The packaging(build / compile) time of the App         |
 
+## how to run example
+
+1. Clone the code from master branch.
+2. Go into the root directory of this project, and run `yarn` or `npm install`.
+3. Go into the `/example/ios` directory, and run `pod install`. (Optional, only for running example on iOS device)
+4. Under the directory `/example`, run `yarn android` or `npm run android` for Android device, and `yarn ios` or `npm run ios` for iOS device.
+
 ## License
 
 MIT
