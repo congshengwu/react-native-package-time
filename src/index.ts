@@ -13,4 +13,28 @@ function getPackageTime(): Promise<number> {
   });
 }
 
-export { getPackageTime };
+function getLastUpdateTime(): Promise<number> {
+  return new Promise<number>((resolve) => {
+    if (Platform.OS === 'ios') {
+    } else {
+      NativeModules.RNPackageTimeModule.getLastUpdateTime((result: string) => {
+        resolve(Number(result));
+      });
+    }
+  });
+}
+
+function getFirstInstallTime(): Promise<number> {
+  return new Promise<number>((resolve) => {
+    if (Platform.OS === 'ios') {
+    } else {
+      NativeModules.RNPackageTimeModule.getFirstInstallTime(
+        (result: string) => {
+          resolve(Number(result));
+        }
+      );
+    }
+  });
+}
+
+export { getFirstInstallTime, getLastUpdateTime, getPackageTime };
