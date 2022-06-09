@@ -30,11 +30,13 @@ getPackageTime().then((time): nubmer => {
 
 ## API
 
-|       Method      |  Param          |   Return Type       | iOS     |  Android      |                         Description                     |
-| ----------------- | ------          | -----------         | ------- |  ---          | --------------------------------------------------------|
-| getPackageTime()  |        -        | `Promise<number>`   |    true |    true       |  The packaging(build / compile) time of the App         |
+| Method                |      Param      |     Return Type     |   iOS   | Android  | Description                                                                           |
+|:----------------------|:---------------:|:-------------------:|:-------:|:--------:|:--------------------------------------------------------------------------------------|
+| getPackageTime()      |        -        |  `Promise<number>`  |  true   |   true   | The packaging(build / compile) time of App                                            |
+| getFirstInstallTime() |        -        |  `Promise<number>`  |  true   |   true   | The first install time of App (It will not change until uninstallation)               |
+| getLastUpdateTime()   |        -        |  `Promise<number>`  |  true   |   true   | The update install time of App (On iOS, **Version** or **Build** changes is required) |
 
-## How to run example
+## How to run the example project
 
 1. Clone the code from master branch.
 2. Go into the root directory of this project, and run `yarn` or `npm install`.
@@ -43,8 +45,8 @@ getPackageTime().then((time): nubmer => {
 
 ## Todo
 
-- [ ] Get the first installation time of the app.
-- [ ] Get the update installation time of the app.
+- [x] Get the first installation time of the app.
+- [x] Get the update installation time of the app.
 
 ## License
 
