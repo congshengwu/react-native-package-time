@@ -27,6 +27,8 @@ function getLastUpdateTime(): Promise<number> {
 function getFirstInstallTime(): Promise<number> {
   return new Promise<number>((resolve) => {
     if (Platform.OS === 'ios') {
+      const time = NativeModules.RNPackageTimeModule.firstInstallTime;
+      resolve(new Date(time).getTime());
     } else {
       NativeModules.RNPackageTimeModule.getFirstInstallTime(
         (result: string) => {
