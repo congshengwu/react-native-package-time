@@ -16,6 +16,8 @@ function getPackageTime(): Promise<number> {
 function getLastUpdateTime(): Promise<number> {
   return new Promise<number>((resolve) => {
     if (Platform.OS === 'ios') {
+      const time = NativeModules.RNPackageTimeModule.lastUpdateTime;
+      resolve(new Date(time).getTime());
     } else {
       NativeModules.RNPackageTimeModule.getLastUpdateTime((result: string) => {
         resolve(Number(result));

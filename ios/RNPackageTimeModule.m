@@ -38,7 +38,17 @@
   [df setDateFormat:@"yyyy-MM-dd\'T\'HH:mm:ss.SSS"];
   NSString *installTime = [df stringFromDate:installDate];
 
-  return @{ @"packageTime": packageTime, @"firstInstallTime": installTime };
+  // last update time
+  NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+  NSFileManager *fileManager = [NSFileManager defaultManager];
+  NSDictionary *fileAttributes = [fileManager attributesOfItemAtPath:bundlePath error:nil];
+  NSDate *lastUpdateDate = [fileAttributes objectForKey:NSFileCreationDate];
+
+  NSDateFormatter*df2 = [[NSDateFormatter alloc]init];
+  [df2 setDateFormat:@"yyyy-MM-dd\'T\'HH:mm:ss.SSS"];
+  NSString *lastUpdateTime = [df2 stringFromDate:lastUpdateDate];
+
+  return @{ @"packageTime": packageTime, @"firstInstallTime": installTime, @"lastUpdateTime": lastUpdateTime };
 }
 
 @end
