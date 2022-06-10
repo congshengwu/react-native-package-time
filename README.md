@@ -1,6 +1,6 @@
 # react-native-package-time
 
-Get the packaging(build / compile) time for your app.
+Get some state timestamps of app.
 
 ## Installation
 
